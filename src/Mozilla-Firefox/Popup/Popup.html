@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="./Popup.css">
+</head>
+<body url_alert="false" color_theme="dark" lang="ja">
+    <div class="jp_content">
+
+        <div><p class="alert_message"><span class="ja">YouTubeのみ対応</span><span class="en">Support only YouTube</span></p></div>
+        <div id="content">
+            <h1 class="title main_title">YouTube Tile</h1><span class="title ext_ver_title position_fixed">dev</span>
+                <svg viewBox="0 0 512 512" width="18px" height:="18px" id="setting" class="setting_icon position_fixed" icon_display="true">
+                    <g>
+                    <path class="st0" d="M499.453,210.004l-55.851-2.58c-5.102-0.23-9.608-3.395-11.546-8.103l-11.508-27.695
+                    c-1.937-4.728-0.997-10.145,2.455-13.914l37.668-41.332c4.718-5.188,4.546-13.205-0.421-18.182l-46.434-46.443
+                    c-4.986-4.967-13.003-5.159-18.2-0.412l-41.312,37.668c-3.778,3.443-9.206,4.402-13.924,2.436l-27.694-11.488
+                    c-4.718-1.946-7.864-6.454-8.094-11.565l-2.589-55.831C301.675,5.534,295.883,0,288.864,0h-65.708
+                    c-7.02,0-12.831,5.534-13.156,12.562l-2.571,55.831c-0.23,5.111-3.376,9.618-8.094,11.565L171.64,91.447
+                    c-4.737,1.966-10.165,1.007-13.924-2.436l-41.331-37.668c-5.198-4.746-13.215-4.564-18.201,0.412L51.769,98.198
+                    c-4.986,4.977-5.158,12.994-0.422,18.182l37.668,41.332c3.452,3.769,4.373,9.186,2.416,13.914l-11.469,27.695
+                    c-1.956,4.708-6.444,7.873-11.564,8.103l-55.832,2.58c-7.019,0.316-12.562,6.118-12.562,13.147v65.699
+                    c0,7.019,5.543,12.83,12.562,13.148l55.832,2.579c5.12,0.229,9.608,3.394,11.564,8.103l11.469,27.694
+                    c1.957,4.728,1.036,10.146-2.416,13.914l-37.668,41.313c-4.756,5.217-4.564,13.224,0.403,18.201l46.471,46.443
+                    c4.967,4.977,12.965,5.15,18.182,0.422l41.312-37.677c3.759-3.443,9.207-4.392,13.924-2.435l27.694,11.478
+                    c4.719,1.956,7.864,6.464,8.094,11.575l2.571,55.831c0.325,7.02,6.136,12.562,13.156,12.562h65.708
+                    c7.02,0,12.812-5.542,13.138-12.562l2.589-55.831c0.23-5.111,3.376-9.619,8.094-11.575l27.694-11.478
+                    c4.718-1.957,10.146-1.008,13.924,2.435l41.312,37.677c5.198,4.728,13.215,4.555,18.2-0.422l46.434-46.443
+                    c4.967-4.977,5.139-12.984,0.421-18.201l-37.668-41.313c-3.452-3.768-4.412-9.186-2.455-13.914l11.508-27.694
+                    c1.937-4.709,6.444-7.874,11.546-8.103l55.851-2.579c7.019-0.318,12.542-6.129,12.542-13.148v-65.699
+                    C511.995,216.122,506.472,210.32,499.453,210.004z M256.01,339.618c-46.164,0-83.622-37.438-83.622-83.612
+                    c0-46.184,37.458-83.622,83.622-83.622s83.602,37.438,83.602,83.622C339.612,302.179,302.174,339.618,256.01,339.618z">
+                    </path>
+                    </g>
+                </svg>
+                <svg viewBox="0 0 512 512" width="18px" height:="18px" id="home" class="setting_icon position_fixed" icon_display="false">
+                    <g>
+                    <polygon class="st0" points="442.531,218 344.828,120.297 256,31.469 167.172,120.297 69.438,218.047 0,287.469 39.984,327.453 
+                        109.406,258.031 207.156,160.281 256,111.438 304.844,160.281 402.531,257.984 472.016,327.453 512,287.469"></polygon>
+                    <polygon class="st0" points="85.719,330.375 85.719,480.531 274.75,480.531 274.75,361.547 343.578,361.547 343.578,480.531 
+                        426.281,480.531 426.281,330.328 256.016,160.063"></polygon>
+                    </g>
+                </svg>
+                
+            <div id="main_content" content_display="true">
+            <form id="option_form">
+                <div>
+                    <div class="select_wrapper">
+                        <h2 id="home_title"><span class="ja">ホーム</span><span class="en">Home</span></h2>
+                        <dl>
+                        <dt class="select"><span class="ja">ホーム画面表示方法</span><span class="en">Home Display Mode</span></dt>
+                        <dd>
+                            <select name="home_view_mode" size="1" id="home_view_mode">
+                                    <option value="default">デフォルト</option>
+                                    <option value="simple">シンプル</option>
+                                    <option value="tile">タイル</option>
+                                    <option value="simple_tile">シンプルタイル</option>
+                            </select>
+                        </dd>
+                        </dl>
+    
+                        <dl>
+                            <span id="home_can_change">
+                                <dt><span class="ja">サムネイルサイズ</span><span class="en">Thumbnail Size</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="home_thumb_size" step="1">
+                                </dd>
+                                <dt><span class="ja">サムネイルマージン</span><span class="en">Thumbnail Margin</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="home_thumb_margin" step="1">
+                                </dd>
+                                <dt><span class="ja">コンテンツマージン</span><span class="en">Contents Margin</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="home_contents_margin" step="1">
+                                </dd>
+                            </span>
+                                <dt><span class="ja">フォントサイズ</span><span class="en">Font Size</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="home_font_size" step="1">
+                                </dd>
+                        </dl>
+                    </div>
+    
+                    <div class="select_wrapper">
+                        <h2 id="search_title"><span class="ja">検索結果<span class="experiment">(実験的)</span></span><span class="en">Search Results</span></h2>
+                        <dl>
+                        <dt class="select"><span class="ja">検索結果表示方法</span><span class="en">Search Results Display Mode<span class="experiment">(experimental)</span></span></dt>
+                        <dd>
+                            <select name="search_view_mode" size="1" id="search_view_mode">
+                                <option value="default">デフォルト</option>
+                                <option value="tile">タイル</option>
+                                <option value="wide">ワイド</option>
+                            </select>
+                        </dd>
+                        </dl>
+    
+                        <dl>
+                            <span id="search_can_change">
+                                <dt><span class="ja">サムネイルサイズ</span><span class="en">Thumbnail Size</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="search_thumb_size" step="1">
+                                </dd>
+                                <dt><span class="ja">サムネイルマージン</span><span class="en">Thumbnail Margin</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="search_thumb_margin" step="1">
+                                </dd>
+                                <dt><span class="ja">コンテンツマージン</span><span class="en">Contents Margin</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="search_contents_margin" step="1">
+                                </dd>
+                            </span>
+                                <dt><span class="ja">フォントサイズ</span><span class="en">Font Size</span></dt>
+                                <dd>
+                                    <input type="range" min="0" max="9" id="search_font_size" step="1">
+                                </dd>
+                        </dl>
+                    </div>
+    
+                    <div class="select_wrapper">
+                        <div>
+                            <h2 id="playlist_title"><span class="ja">プレイリスト</span><span class="en">Playlist</span></h2>
+                        </div>
+                        <div>
+                            <dl>
+                            <dt class="select"><span class="ja">再生リスト表示方法</span><span class="en">Playlist Display Mode</span></dt>
+                            <dd>
+                                <select name="playlist_view_mode" size="1" id="playlist_view_mode">
+                                    <option value="default">デフォルト</option>
+                                    <option value="tile">タイル</option>
+                                    <option value="ribbon">リボン</option>
+                                </select>
+                            </dd>
+                            </dl>
+                
+                            <dl>
+                                <span id="playlist_can_change">
+                                    <dt><span class="ja">サムネイルサイズ</span><span class="en">Thumbnail Size</span></dt>
+                                    <dd>
+                                        <input type="range" min="0" max="9" id="playlist_thumb_size" step="1">
+                                    </dd>
+                                    <dt><span class="ja">サムネイルマージン</span><span class="en">Thumbnail Margin</span></dt>
+                                    <dd>
+                                        <input type="range" min="0" max="9" id="playlist_thumb_margin" step="1">
+                                    </dd>
+                                    <dt><span class="ja">コンテンツマージン</span><span class="en">Contents Margin</span></dt>
+                                    <dd>
+                                        <input type="range" min="0" max="9" id="playlist_contents_margin" step="1">
+                                    </dd>
+                                </span>
+                                    <dt><span class="ja">フォントサイズ</span><span class="en">Font Size</span></dt>
+                                    <dd>
+                                        <input type="range" min="0" max="9" id="playlist_font_size" step="1">
+                                    </dd>
+                            </dl>
+                        </div>
+                        
+                        
+                    </div>
+    
+                </div>
+    
+                <div class="apply_form">
+                    <input type="reset" value="リセット" class="apply input_reset">
+                    <input type="button" value="適用" id="apply" class="apply input_apply">
+                    <label><input type="checkbox" id="set_default"><span><span class="ja">デフォルトに設定</span><span class="en">Set as default</span></span></label>
+                </div>
+    
+            </form>
+            </div>
+    
+            <div id="setting_content" content_display="false">
+                <div>
+                    <div class="setting_form">
+                        <dl>
+                            <dt class="select"><span class="ja">カラーテーマ</span><span class="en">Color Theme</span></dt>
+                            <dd>
+                                <select name="color_theme" size="1" id="color_theme">
+                                        <option value="light"><span class="ja">ライト</span><span class="en">Light</span></option>
+                                        <option value="dark"><span class="ja">ダーク</span><span class="en">Dark</span></option>
+                                </select>
+                            </dd>
+                        </dl>
+        
+                        <dl>
+                            <dt class="select">language</dt>
+                            <dd>
+                                <select name="language" size="1" id="language">
+                                        <option value="ja">日本語 (Japanese)</option>
+                                        <option value="en">English</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <input type="button" value="適用" id="setting_apply" class="input_apply">
+                    </div>
+                        <dl class="setting_description">
+                            <dt class="table"><span class="ja">用語説明</span><span class="en">Description of the terms</span></dt>
+                            <div class="setting_form setting_description">
+                                <dd>
+                                    <details>
+                                            <summary><span class="ja">デフォルト</span><span class="en">Default</span></summary>
+                                            <span class="ja">サイト本来の表示方法です。</span>
+                                            <span class="en">Display as the default style of YouTube.</span>
+                                    </details>
+                                    <details>
+                                            <summary><span class="ja">フォントサイズ</span><span class="en">Font Size</span></summary>
+                                            <span class="ja">フォントサイズを変更します。</span>
+                                            <span class="en">Change the font size.</span>
+                                    </details>
+                                    <details>
+                                            <summary><span class="ja">シンプル(ホーム)</span><span class="en">Simple(Home)</span></summary>
+                                            <span class="ja">動画をアップロードしたチャンネルのチャンネルアイコンを非表示にします。</span>
+                                            <span class="en">Hide the channel icon of the channnel uploaded the movie.</span>
+                                    </details>
+                                    <details>
+                                            <summary><span class="ja">タイル(ホーム)</span><span class="en">Tile(Home)</span></summary>
+                                            <span class="ja">サムネイルをタイル方式で表示します。<br>
+                                                サムネイルサイズ・サムネイルマージン・コンテンツマージンを自由に設定/保存できます。
+                                            </span>
+                                            <span class="en">Display the thumbnail as tiles.<br>
+                                                You can set and save as you like the Thumbnail size, Thumbnail margin and Contents margin.
+                                            </span>
+                                    </details>
+                                    <details>
+                                            <summary><span class="ja">シンプルタイル(ホーム)</span><span class="en">Simple Tile(Home)</span></summary>
+                                            <span class="ja">動画をアップロードしたチャンネルのチャンネルアイコンを非表示にし、サムネイルをタイル方式で表示します。<br>
+                                                サムネイルサイズ・サムネイルマージン・コンテンツマージンを自由に設定/保存できます。
+                                            </span>
+                                            <span class="en">Hide the channel icon of the channnel uploaded the movie, and display the thumbnail as tiles.<br>
+                                                You can set and save as you like the Thumbnail size, Thumbnail margin and Contents margin.
+                                            </span>
+                                            
+                                    </details>
+                                    <details>
+                                            <summary><span class="ja">タイル(検索結果)</span><span class="en">Tile(Search Results)</span></summary>
+                                            <span class="ja">サムネイルをタイル方式で表示します。<br>
+                                                サムネイルサイズ・サムネイルマージン・コンテンツマージンを自由に設定/保存できます。
+                                            </span>
+                                            <span class="en">Display the thumbnail as tiles.<br>
+                                                You can set and save as you like the Thumbnail size, Thumbnail margin and Contents margin.
+                                            </span>
+                                    </details>
+                                    <details>
+                                        <summary><span class="ja">ワイド(検索結果)</span><span class="en">Wide(Search Results)</span></summary>
+                                        <span class="ja">右サイドのコンテンツ表示を非表示にし、一覧性を高めます。サムネイルをタイル方式で表示します。<br>
+                                            サムネイルサイズ・サムネイルマージン・コンテンツマージンを自由に設定/保存できます。
+                                        </span>
+                                        <span class="en">Hide the contents on the right side. Display the thumbnail as tiles.<br>
+                                            You can set and save as you like the Thumbnail size, Thumbnail margin and Contents margin.
+                                        </span>
+                                </details>
+                                    <details>
+                                            <summary><span class="ja">タイル(プレイリスト)</span><span class="en">Tile(Playlist)</span></summary>
+                                            <span class="ja">サムネイルをタイル方式で表示します。<br>
+                                                サムネイルサイズ・サムネイルマージン・コンテンツマージンを自由に設定/保存できます。
+                                            </span>
+                                            <span class="en">Display the thumbnail as tiles.<br>
+                                                You can set and save as you like the Thumbnail size, Thumbnail margin and Contents margin.
+                                            </span>
+                                    </details>
+                                    <details>
+                                            <summary><span class="ja">リボン(プレイリスト)</span><span class="en">Ribbon(Playlist)</span></summary>
+                                            <span class="ja">プレイリストを横長のリボン形式で表示します。<br>
+                                                プレイリストの並べ替えが可能です。
+                                            </span>
+                                            <span class="en">Display the playlist as ribbons.<br>
+                                                You can reorder your playlist items.
+                                            </span>
+                                    </details>
+                                 </dd>
+                             </div>
+                        </dl>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="./Popup.js"></script>
+</html>

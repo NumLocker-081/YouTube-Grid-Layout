@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Tile - dev",
+  "description": "Change YouTube site's appearance",
+  "version": "1.2.12.2",
+
+  "icons": {
+    "16": "./icon/img/icon16.png",
+    "48": "./icon/img/icon48.png",
+    "128": "./icon/img/icon128.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "content_scripts": [{
+    "js": ["./js/content.js"],
+    "css": ["./css/content_playlist.css", "./css/content_home.css", "./css/content_search.css"],
+    "matches": ["https://www.youtube.com/*"]
+  }],
+
+  "browser_action": {
+    "default_icon": "./icon/img/icon.png",
+    "default_popup": "./Popup/Popup.html",
+    "default_title": "YouTube Tile - dev"
+  },
+
+  "background": {
+    "scripts": ["./js/background.js"],
+    "persistent": false
+  }
+}
