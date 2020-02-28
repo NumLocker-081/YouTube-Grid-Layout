@@ -5,9 +5,9 @@
   "version": "0.1.1",
 
   "icons": {
-    "16": "./icon/img/icon16.png",
-    "48": "./icon/img/icon48.png",
-    "128": "./icon/img/icon128.png"
+    "16": "./../common/icon/img/icon16.png",
+    "48": "./../common/icon/img/icon48.png",
+    "128": "./../common/icon/img/icon128.png"
   },
 
   "permissions": [
