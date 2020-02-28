@@ -17,7 +17,7 @@
 
   "content_scripts": [{
     "js": ["./js/content.js"],
-    "css": ["./css/content_playlist.css", "./css/content_home.css", "./css/content_search.css"],
+    "css": ["./../common/css/content_playlist.css", "./../common/css/content_home.css", "./../common/css/content_search.css"],
     "matches": ["https://www.youtube.com/*"]
   }],
 
