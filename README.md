@@ -6,7 +6,7 @@
 
 ## Browser support
 
-It has two versions. *Chromium-based version*, and *Firefox version*.
+It has two versions. *Chromium-based version*, and *Mozilla-Firefox version*.
 
 ### *Chromium-based version*
 You can use this version if you are using Chromium-based browsers such as Google Chrome,  Microsoft Edge, Opera, Vivaldi and every other browsers which can install chrome extensions.
