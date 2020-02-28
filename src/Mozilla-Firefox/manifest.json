@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "YouTube Tile - dev",
+  "name": "YouTube Tile",
   "description": "Change YouTube site's appearance",
-  "version": "1.2.12.2",
+  "version": "0.1.1",
 
   "icons": {
     "16": "./icon/img/icon16.png",
@@ -24,7 +24,7 @@
   "browser_action": {
     "default_icon": "./icon/img/icon.png",
     "default_popup": "./Popup/Popup.html",
-    "default_title": "YouTube Tile - dev"
+    "default_title": "YouTube Tile"
   },
 
   "background": {
