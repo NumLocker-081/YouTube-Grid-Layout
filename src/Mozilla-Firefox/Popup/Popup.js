@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
     if (/^https:\/\/www\.youtube\.com.+$/.test(tabs[0].url) === true){
         document.getElementsByTagName('body')[0].setAttribute('url_alert','true');
 
-        chrome.runtime.sendMessage('ext_states', function(response){
+        chrome.runtime.sendMessage('popup_load', function(response){
             document.getElementById('home_view_mode').value = response[0];
             document.getElementById('home_thumb_size').value = response[1];
             document.getElementById('home_thumb_margin').value = response[2];
