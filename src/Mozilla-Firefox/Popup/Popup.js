@@ -14,21 +14,6 @@ function main (tabs) {
 
         document.getElementById('apply').addEventListener('click', apply);
 
-
-
-        document.querySelector('.setting_icon#setting').addEventListener('click', function(){
-            document.getElementById('main_content').setAttribute('content_display', 'false');
-            document.getElementById('setting_content').setAttribute('content_display', 'true');
-            document.querySelector(".setting_icon#setting").setAttribute('icon_display', 'false');
-            document.querySelector(".setting_icon#home").setAttribute('icon_display', 'true');
-        })
-        document.querySelector('.setting_icon#home').addEventListener('click', function(){
-            document.getElementById('main_content').setAttribute('content_display', 'true');
-            document.getElementById('setting_content').setAttribute('content_display', 'false');
-            document.querySelector(".setting_icon#setting").setAttribute('icon_display', 'true');
-            document.querySelector(".setting_icon#home").setAttribute('icon_display', 'false');
-        })
-
         document.getElementById('setting_apply').addEventListener('click', function(){
             let color_theme = document.getElementById('color_theme').value;
             let lang = document.getElementById('language').value;
@@ -38,35 +23,30 @@ function main (tabs) {
             browser.runtime.sendMessage([color_theme, lang, 'settings']);
             setInputLang(lang);
             setSlectLang(lang);
-
-            document.getElementById('main_content').setAttribute('content_display', 'true');
-            document.getElementById('setting_content').setAttribute('content_display', 'false');
-            document.querySelector(".setting_icon#setting").setAttribute('icon_display', 'true');
-            document.querySelector(".setting_icon#home").setAttribute('icon_display', 'false');
         })
 
 
         document.getElementById('home_view_mode').addEventListener('change', function () {
             if (document.getElementById('home_view_mode').value === 'tile' || document.getElementById('home_view_mode').value === 'simple_tile'){
-                document.getElementById('home_can_change').setAttribute('can_change', 'true');
+                document.getElementById('home_can_change').setAttribute('changeable', 'true');
             } else {
-                document.getElementById('home_can_change').setAttribute('can_change', 'false');
+                document.getElementById('home_can_change').setAttribute('changeable', 'false');
             }
         })
 
         document.getElementById('search_view_mode').addEventListener('change', function () {
             if (document.getElementById('search_view_mode').value === 'tile' || document.getElementById('search_view_mode').value === 'wide'){
-                document.getElementById('search_can_change').setAttribute('can_change', 'true');
+                document.getElementById('search_can_change').setAttribute('changeable', 'true');
             } else {
-                document.getElementById('search_can_change').setAttribute('can_change', 'false');
+                document.getElementById('search_can_change').setAttribute('changeable', 'false');
             }
         })
 
         document.getElementById('playlist_view_mode').addEventListener('change', function () {
             if (document.getElementById('playlist_view_mode').value === 'tile'){
-                document.getElementById('playlist_can_change').setAttribute('can_change', 'true');
+                document.getElementById('playlist_can_change').setAttribute('changeable', 'true');
             } else {
-                document.getElementById('playlist_can_change').setAttribute('can_change', 'false');
+                document.getElementById('playlist_can_change').setAttribute('changeable', 'false');
             }
         })
 
@@ -100,21 +80,21 @@ function applyExtStates (response) {
     setSlectLang(response[16]);
     
     if (response[0] === 'tile' || response[0] === 'simple_tile'){
-        document.getElementById('home_can_change').setAttribute('can_change', 'true');
+        document.getElementById('home_can_change').setAttribute('changeable', 'true');
     } else {
-        document.getElementById('home_can_change').setAttribute('can_change', 'false');
+        document.getElementById('home_can_change').setAttribute('changeable', 'false');
     }
 
     if (response[5] === 'tile' || response[5] === 'wide'){
-        document.getElementById('search_can_change').setAttribute('can_change', 'true');
+        document.getElementById('search_can_change').setAttribute('changeable', 'true');
     } else {
-        document.getElementById('search_can_change').setAttribute('can_change', 'false');
+        document.getElementById('search_can_change').setAttribute('changeable', 'false');
     }
 
     if (response[10] === 'tile'){
-        document.getElementById('playlist_can_change').setAttribute('can_change', 'true');
+        document.getElementById('playlist_can_change').setAttribute('changeable', 'true');
     } else {
-        document.getElementById('playlist_can_change').setAttribute('can_change', 'false');
+        document.getElementById('playlist_can_change').setAttribute('changeable', 'false');
     }
 }
 
