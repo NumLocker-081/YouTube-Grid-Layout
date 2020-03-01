@@ -93,7 +93,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
         chrome.tabs.query({url: "*://*.youtube.com/*"}, function (tabs){
             if (ext_states[1][0] !== ''){
 
-                sendResponse(ext_states[0].concat([items.color_theme, items.lang]));
+                chrome.storage.local.get(["color_theme", "lang"], (items) => sendResponse(ext_states[0].concat([items.color_theme, items.lang])))
 
             } else {
 
@@ -110,25 +110,6 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
 
             }
         })
-
-        // if (ext_states[1][0] === ''){
-        //     chrome.storage.local.get(["home_view_mode", "home_thumb_size", "home_thumb_margin", "home_contents_margin", "home_font_size",
-        //     "search_view_mode", "search_thumb_size", "search_thumb_margin", "search_contents_margin", "search_font_size",
-        //     "playlist_view_mode", "playlist_thumb_size", "playlist_thumb_margin", "playlist_contents_margin", "playlist_font_size",
-        //     "color_theme", "lang"],
-        //     function(items){
-        //         sendResponse([items.home_view_mode, items.home_thumb_size, items.home_thumb_margin, items.home_contents_margin, items.home_font_size,
-        //             items.search_view_mode, items.search_thumb_size, items.search_thumb_margin, items.search_contents_margin, items.search_font_size,
-        //             items.playlist_view_mode, items.playlist_thumb_size, items.playlist_thumb_margin, items.playlist_contents_margin, items.playlist_font_size,
-        //             items.color_theme, items.lang]);
-        //     })
-        // } else {
-        //     chrome.storage.local.get(["color_theme", "lang"],
-        //         function(items){
-        //             sendResponse(ext_states[0].concat([items.color_theme, items.lang]));
-        //         }
-        //     )
-        // }
 
     }
 
