@@ -26,6 +26,8 @@ You can use this extension in English and Japanese.
 
 This README is written considering you use [**Google Translate**](https://translate.google.com/) if you cannot read English. If you cannot understand what this README's meanings, Please let me know the problem.
 
+---------------------------------------
+
 ## Authors
 NumLocker (https://github.com/NumLocker-081)
 
@@ -34,3 +36,8 @@ NumLocker (https://github.com/NumLocker-081)
 
 ### WebExtension browser API Polyfill
 https://github.com/mozilla/webextension-polyfill#contributing-to-this-project
+
+## License
+*Copyright (c) 2020 NumLocker*<br>
+Released under the MIT license<br>
+https://opensource.org/licenses/mit-license.php
