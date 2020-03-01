@@ -62,16 +62,16 @@ chrome.runtime.onInstalled.addListener(function (details){
     }
 });
 
-let ext_states = [[''], ['']];
+let ext_status = [[''], ['']];
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
 
     if (message === 'load'){
 
         chrome.tabs.query({url: "*://*.youtube.com/*"}, function (tabs){
-            if (ext_states[1][0] !== ''){
+            if (ext_status[1][0] !== ''){
 
-                sendResponse(ext_states[0]);
+                sendResponse(ext_status[0]);
 
             } else {
 
@@ -91,9 +91,9 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
     if (message === 'popup_load'){
 
         chrome.tabs.query({url: "*://*.youtube.com/*"}, function (tabs){
-            if (ext_states[1][0] !== ''){
+            if (ext_status[1][0] !== ''){
 
-                chrome.storage.local.get(["color_theme", "lang"], (items) => sendResponse(ext_states[0].concat([items.color_theme, items.lang])))
+                chrome.storage.local.get(["color_theme", "lang"], (items) => sendResponse(ext_status[0].concat([items.color_theme, items.lang])))
 
             } else {
 
@@ -131,9 +131,9 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
             "playlist_contents_margin": message[13],
             "playlist_font_size": message[14]
         });
-        ext_states = [[message[0], message[1], message[2], message[3], message[4], message[5], message[6], message[7], message[8], message[9], message[10], message[11], message[12], message[13], message[14]], ['save']];
+        ext_status = [[message[0], message[1], message[2], message[3], message[4], message[5], message[6], message[7], message[8], message[9], message[10], message[11], message[12], message[13], message[14]], ['save']];
     } else if (message.length === 16 && message[15] === 'apply'){
-        ext_states = [[message[0], message[1], message[2], message[3], message[4], message[5], message[6], message[7], message[8], message[9], message[10], message[11], message[12], message[13], message[14]], ['apply']];
+        ext_status = [[message[0], message[1], message[2], message[3], message[4], message[5], message[6], message[7], message[8], message[9], message[10], message[11], message[12], message[13], message[14]], ['apply']];
     }
 
     if (message.length === 3 && message[2] === 'settings'){
