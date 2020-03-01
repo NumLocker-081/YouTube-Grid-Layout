@@ -190,12 +190,18 @@ body{
 }
 
 .select_wrapper__title{
+    margin-top: 10px;
+    margin-bottom: 5px;
     text-align: center;
     font-size: 18px;
 }
 
 .select_wrapper__subtitle{
     font-size: 14px;
+
+    &.selection_title{
+        padding-bottom: 5px;
+    }
 }
 
 .btn{
@@ -287,6 +293,10 @@ input[type="range"]{
 
     #setting_description{
         flex: 1;
+    }
+
+    .setting_content__subtitle{
+        padding-bottom: 5px;
     }
 
     .setting_description__description{

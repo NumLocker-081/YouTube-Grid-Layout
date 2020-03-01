@@ -184,12 +184,18 @@ body[url_alert="false"][url_alert="false"] .position_fixed {
 }
 
 .select_wrapper__title {
+  margin-top: 10px;
+  margin-bottom: 5px;
   text-align: center;
   font-size: 18px;
 }
 
 .select_wrapper__subtitle {
   font-size: 14px;
+}
+
+.select_wrapper__subtitle.selection_title {
+  padding-bottom: 5px;
 }
 
 .btn {
@@ -280,6 +286,10 @@ input[type="range"]::-webkit-slider-thumb {
 
 #setting_content #setting_description {
   flex: 1;
+}
+
+#setting_content .setting_content__subtitle {
+  padding-bottom: 5px;
 }
 
 #setting_content .setting_description__description {
