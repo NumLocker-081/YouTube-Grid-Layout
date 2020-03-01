@@ -69,7 +69,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
     if (message === 'load'){
 
         chrome.tabs.query({url: "*://*.youtube.com/*"}, function (tabs){
-            if (tabs.length >= 2 && ext_states[1][0] !== ''){
+            if (ext_states[1][0] !== ''){
 
                 sendResponse(ext_states[0]);
 
@@ -91,9 +91,9 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse){
     if (message === 'popup_load'){
 
         chrome.tabs.query({url: "*://*.youtube.com/*"}, function (tabs){
-            if (tabs.length >= 2 && ext_states[1][0] !== ''){
+            if (ext_states[1][0] !== ''){
 
-                sendResponse(ext_states[0].concat([items.color_theme, items.lang]));
+                chrome.storage.local.get(["color_theme", "lang"], (items) => sendResponse(ext_states[0].concat([items.color_theme, items.lang])))
 
             } else {
 
