@@ -1,18 +1,22 @@
 # YouTube Grid Layout
 
-**YouTube Grid Layout** is a browser extension for web browsers.<br>
-This extension makes [YouTube](https://www.youtube.com/) display in grid layout, and you will be able to access and find the video which you want to watch much more easily.<br>
+**YouTube Grid Layout** is a extension for web browsers.<br>
+This extension makes [YouTube](https://www.youtube.com/) display in grid layout, and you will be able to access and find the videos which you want to watch much more easily.<br>
 In addition, you can change the **thumbnail size**, **the space among the thumbnails**, and **font size**.<br>
-This extension runs at **Home(https://www.youtube.com/)**, **Playlist(https://www.youtube.com/playlist?list=example)** and **search result page(https://www.youtube.com/results?search_query=example)**<br>
+This extension runs at **Home(https://www.youtube.com/)**, **Playlist(for example : https://www.youtube.com/playlist?list=example)** and **search result page(for example : https://www.youtube.com/results?search_query=example)**<br>
 **(These urls are examples!)**
 
 ![screenshot_playlist](./README/screenshot_playlist.png)
+
+## Synchronization of settings
+If you change settings while you are opening greater than or equal to two tabs on YouTube, All the tab's settings will be synchronized.<br>
+However, You cannot synchronize your settings among different terminals. (for example, among your computers and smartphones)
 
 ## Browser support
 This extension has two versions. *Chromium-based version*, and *Mozilla-Firefox version*.
 
 ### *Chromium-based version*
-You can use this version if you are using Chromium-based browsers such as Google Chrome,  Microsoft Edge, Opera, Vivaldi and every other browsers which can install chrome extensions.
+You can use this version if you are using Chromium-based browsers such as Google Chrome,  Microsoft Edge, Opera, Vivaldi and every other browsers in which you can install chrome extensions.
 
 ### *Mozilla-Firefox version*
 You can use this version if you are using Mozilla Firefox.
