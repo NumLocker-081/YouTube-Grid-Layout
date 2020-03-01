@@ -25,3 +25,12 @@ You can use this version if you are using Mozilla Firefox.
 You can use this extension in English and Japanese.
 
 This README is written considering you use [**Google Translate**](https://translate.google.com/) if you cannot read English. If you cannot understand what this README's meanings, Please let me know the problem.
+
+## Authors
+NumLocker (https://github.com/NumLocker-081)
+
+## Credits
+**YouTube Grid Layout** was made using the following open source project.
+
+### WebExtension browser API Polyfill
+https://github.com/mozilla/webextension-polyfill#contributing-to-this-project
