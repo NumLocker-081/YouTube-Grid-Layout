@@ -72,6 +72,10 @@ body[color_theme="light"] #setting_content .setting_description__description {
   border: 1px solid black;
 }
 
+body[color_theme="light"] .for_dark_theme {
+  display: none;
+}
+
 body[color_theme="dark"] {
   background-color: #303030;
   color: white;
@@ -95,6 +99,10 @@ body[color_theme="dark"] .btn:active {
 
 body[color_theme="dark"] #setting_content .setting_description__description {
   border: 1px solid #ffe0d9;
+}
+
+body[color_theme="dark"] .for_light_theme {
+  display: none;
 }
 
 body[url_alert="true"] p.alert_message {
@@ -302,6 +310,17 @@ input[type="range"]::-webkit-slider-thumb {
   margin-bottom: 3px;
 }
 
-#setting_content a {
-  color: white;
+#setting_content #information {
+  vertical-align: baseline;
+}
+
+#setting_content #github_repo {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#setting_content .open_in_new_tab {
+  height: 18px;
+  margin-bottom: -5px;
+  width: 18px;
 }

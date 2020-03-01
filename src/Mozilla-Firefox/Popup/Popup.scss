@@ -75,6 +75,10 @@ body{
         #setting_content .setting_description__description{
             border: 1px solid black;
         }
+
+        .for_dark_theme{
+            display: none;
+        }
     }
     
     &[color_theme="dark"]{
@@ -99,6 +103,10 @@ body{
 
         #setting_content .setting_description__description{
             border: 1px solid #ffe0d9;
+        }
+
+        .for_light_theme{
+            display: none;
         }
     }
 
@@ -309,7 +317,18 @@ input[type="range"]{
         margin-bottom: 3px;
     }
 
-    a{
-        color: white;
+    #information{
+        vertical-align: baseline;
+    }
+
+    #github_repo{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .open_in_new_tab{
+        height: 18px;
+        margin-bottom: -5px;
+        width: 18px;
     }
 }
