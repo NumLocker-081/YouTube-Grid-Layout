@@ -114,6 +114,10 @@ window.addEventListener('load', function(){
 
         })
 
+        document.getElementById('github_repo').addEventListener('click', () => {
+            chrome.tabs.create({"url": "https://github.com/NumLocker-081/YouTube-Grid-Layout"})
+        })
+
         function setInputLang(lang){
             let all_input_reset = document.querySelectorAll('input.input_reset');
             let all_input_apply = document.querySelectorAll('input.input_apply');
