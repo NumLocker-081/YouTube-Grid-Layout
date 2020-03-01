@@ -269,23 +269,6 @@ input[type="range"]{
     }
 }
 
-.checkbox_container{
-    cursor: pointer;
-}
-
-.checkbox{
-    border: 1px solid #d3d3d363;
-    border-radius: 3px;
-    display: inline-block;
-    height: 16px;
-    margin: 0 3px -3px 5px;
-    width: 16px;
-}
-
-.checkbox.checked{
-    background-image: url(./../common/icon/icon/check.svg);
-}
-
 [changeable="false"] dd{
     filter: opacity(30%) saturate(50%);
     -webkit-user-select: none;

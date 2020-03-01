@@ -73,17 +73,10 @@ window.addEventListener('load', function(){
                 }
             })
 
-            if (document.querySelector('.set_default.checked') !== null){
-                chrome.runtime.sendMessage(
-                    [home_view_mode, home_thumb_size, home_thumb_margin, home_contents_margin, home_font_size,
-                        search_view_mode, search_thumb_size, search_thumb_margin, search_contents_margin, search_font_size,
-                        playlist_view_mode, playlist_thumb_size, playlist_thumb_margin, playlist_contents_margin, playlist_font_size, 'save']);
-            } else {
-                chrome.runtime.sendMessage(
-                    [home_view_mode, home_thumb_size, home_thumb_margin, home_contents_margin, home_font_size,
-                        search_view_mode, search_thumb_size, search_thumb_margin, search_contents_margin, search_font_size,
-                        playlist_view_mode, playlist_thumb_size, playlist_thumb_margin, playlist_contents_margin, playlist_font_size, 'apply']);
-            }
+            chrome.runtime.sendMessage(
+                [home_view_mode, home_thumb_size, home_thumb_margin, home_contents_margin, home_font_size,
+                    search_view_mode, search_thumb_size, search_thumb_margin, search_contents_margin, search_font_size,
+                    playlist_view_mode, playlist_thumb_size, playlist_thumb_margin, playlist_contents_margin, playlist_font_size, 'save']);
         })
 
         document.querySelectorAll('.tab').forEach(x => x.addEventListener('click', () => {
@@ -101,10 +94,6 @@ window.addEventListener('load', function(){
                 document.getElementById('setting_content').classList.remove('isInvisible');
             }
         }));
-
-        document.querySelector('.checkbox_container').addEventListener('click', () => {
-            document.querySelector('.checkbox').classList.toggle('checked');
-        })
 
         document.getElementById('setting_apply').addEventListener('click', function(){
             let color_theme = document.getElementById('color_theme').value;
