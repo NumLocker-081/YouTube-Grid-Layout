@@ -66,7 +66,7 @@ NumLocker (https://github.com/NumLocker-081)
 
 ### WebExtension browser API Polyfill
 *Copyright (c) 2019 mozilla*<br>
-https://github.com/mozilla/webextension-polyfill#contributing-to-this-project
+https://github.com/mozilla/webextension-polyfill
 
 ## License
 *Copyright (c) 2020 NumLocker*<br>
