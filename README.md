@@ -65,6 +65,7 @@ NumLocker (https://github.com/NumLocker-081)
 **YouTube Grid Layout** was made using the following open source project.
 
 ### WebExtension browser API Polyfill
+*Copyright (c) 2019 mozilla*<br>
 https://github.com/mozilla/webextension-polyfill#contributing-to-this-project
 
 ## License
