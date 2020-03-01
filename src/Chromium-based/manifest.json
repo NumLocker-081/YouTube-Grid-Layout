@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "YouTube Grid Layout",
   "description": "This extension makes YouTube display in grid layout, and you will be able to access and find the videos which you want to watch much more easily.",
-  "version": "1.0.2",
+  "version": "1.1.1",
 
   "icons": {
     "16": "./common/icon/img/icon16.png",
