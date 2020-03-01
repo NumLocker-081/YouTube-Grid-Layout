@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "YouTube Grid Layout",
   "description": "Change YouTube site's appearance",
-  "version": "0.1.1",
+  "version": "1.0.1",
 
   "icons": {
     "16": "./common/icon/img/icon16.png",
