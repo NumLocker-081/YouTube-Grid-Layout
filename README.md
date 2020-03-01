@@ -8,6 +8,36 @@ This extension runs at **Home(https://www.youtube.com/)**, **Playlist(for exampl
 
 ![screenshot_playlist](./README/screenshot_playlist.png)
 
+## How to use
+You can change and save settings as you like.<br>
+
+### Setting options
+You can set settings to Home page, to Search result page, and Playlist page differently. You can set each settings in 10 stages.
+
+#### Thumbnail Size
+##### example : 3rd stage
+![Thumbnail_Size_3rd_stage](./README/thumbnail_size_3.png)
+##### example : 5th stage (default)
+![Thumbnail_Size_5th_stage](./README/thumbnail_size_5.png)
+
+#### Thumbnail Margin
+##### example : 1st stage
+![Thumbnail_Margin_1st_stage](./README/thumbnail_margin_1.png)
+##### example : 5th stage (default)
+![Thumbnail_Margin_5th_stage](./README/thumbnail_size_5.png)
+
+#### Contents Margin
+##### example : 1st stage
+![Contents_Margin_1st_stage](./README/contents_margin_1.png)
+##### example : 5th stage (default)
+![Contents_Margin_5th_stage](./README/thumbnail_size_5.png)
+
+#### Font Size
+##### example : 3rd stage
+![Font_Size_3rd_stage](./README/font_size_3.png)
+##### example : 5th stage (default)
+![Font_Size_5th_stage](./README/thumbnail_size_5.png)
+
 ## Synchronization of settings
 If you change settings while you are opening greater than or equal to two tabs on YouTube, All the tab's settings will be synchronized.<br>
 However, You cannot synchronize your settings among different terminals. (for example, among your computers and smartphones)
