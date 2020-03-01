@@ -73,7 +73,7 @@ window.addEventListener('load', function(){
                 }
             })
 
-            if (document.getElementById('set_default').checked === true){
+            if (document.querySelector('.set_default.checked') !== null){
                 chrome.runtime.sendMessage(
                     [home_view_mode, home_thumb_size, home_thumb_margin, home_contents_margin, home_font_size,
                         search_view_mode, search_thumb_size, search_thumb_margin, search_contents_margin, search_font_size,
@@ -101,6 +101,10 @@ window.addEventListener('load', function(){
                 document.getElementById('setting_content').classList.remove('isInvisible');
             }
         }));
+
+        document.querySelector('.checkbox_container').addEventListener('click', () => {
+            document.querySelector('.checkbox').classList.toggle('checked');
+        })
 
         document.getElementById('setting_apply').addEventListener('click', function(){
             let color_theme = document.getElementById('color_theme').value;
