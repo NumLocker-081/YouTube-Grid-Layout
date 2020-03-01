@@ -16,7 +16,7 @@
   ],
 
   "content_scripts": [{
-    "js": ["./common/browser-polyfill.js", "./js/content.js"],
+    "js": ["./js/browser-polyfill.js", "./common/js/content.js"],
     "css": ["./common/css/content_playlist.css", "./common/css/content_home.css", "./common/css/content_search.css"],
     "matches": ["https://www.youtube.com/*"]
   }],
@@ -28,6 +28,6 @@
   },
 
   "background": {
-    "scripts": ["./common/browser-polyfill.js", "./js/background.js"]
+    "scripts": ["./js/browser-polyfill.js", "./common/js/background.js"]
   }
 }

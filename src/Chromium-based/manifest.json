@@ -16,7 +16,7 @@
   ],
 
   "content_scripts": [{
-    "js": ["./js/content.js"],
+    "js": ["./common/js/content.js"],
     "css": ["./common/css/content_playlist.css", "./common/css/content_home.css", "./common/css/content_search.css"],
     "matches": ["https://www.youtube.com/*"]
   }],
@@ -28,7 +28,7 @@
   },
 
   "background": {
-    "scripts": ["./js/background.js"],
+    "scripts": ["./common/js/background.js"],
     "persistent": false
   }
 }
