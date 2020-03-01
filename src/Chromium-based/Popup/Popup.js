@@ -238,7 +238,7 @@ window.addEventListener('load', function(){
 
 
     } else {
-        chrome.runtime.sendMessage('ext_states', function(response){
+        chrome.runtime.sendMessage('popup_load', function(response){
             document.querySelector('body').setAttribute('color_theme', response[15]);
             document.querySelector('body').setAttribute('lang', response[16]);
         })
