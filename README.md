@@ -8,6 +8,27 @@ This extension runs at **Home(https://www.youtube.com/)**, **Playlist(for exampl
 
 ![screenshot_playlist](./README/screenshot_playlist.png)
 
+## Browser support
+This extension has two versions. *Chromium-based version*, and *Mozilla-Firefox version*.
+
+### Officially supported
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Opera
+- Vivaldi
+
+### *Chromium-based version*
+You can use this version if you are using Chromium-based browsers such as Google Chrome,  Microsoft Edge, Opera, Vivaldi and every other browsers in which you can install chrome extensions.
+
+### *Mozilla-Firefox version*
+You can use this version if you are using Mozilla Firefox.
+
+## How to install
+### *Mozilla-Firefox version*
+Visit [YouTube Grid Layout - Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/youtube-grid-layout/) and install.
+
 ## How to use
 You can change and save settings as you like.<br>
 
@@ -41,15 +62,6 @@ You can set settings to Home page, to Search result page, and Playlist page diff
 ## Synchronization of settings
 If you change settings while you are opening greater than or equal to two tabs on YouTube, All the tab's settings will be synchronized.<br>
 However, You cannot synchronize your settings among different terminals. (for example, among your computers and smartphones)
-
-## Browser support
-This extension has two versions. *Chromium-based version*, and *Mozilla-Firefox version*.
-
-### *Chromium-based version*
-You can use this version if you are using Chromium-based browsers such as Google Chrome,  Microsoft Edge, Opera, Vivaldi and every other browsers in which you can install chrome extensions.
-
-### *Mozilla-Firefox version*
-You can use this version if you are using Mozilla Firefox.
 
 ## Language support
 You can use this extension in English and Japanese.
