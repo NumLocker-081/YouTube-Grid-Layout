@@ -11,7 +11,7 @@ This extension runs at **Home(https://www.youtube.com/)**, **Playlist(for exampl
 ## Browser support
 This extension has two versions. *Chromium-based version*, and *Mozilla-Firefox version*.
 
-### Officially supported
+### Officially supported browser
 
 - Google Chrome
 - Mozilla Firefox
