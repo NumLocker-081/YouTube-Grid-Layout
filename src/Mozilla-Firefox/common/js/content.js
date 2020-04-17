@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+// window.addEventListener('load', function(){
     let tools_container = document.querySelector('ytd-page-manager#page-manager.style-scope.ytd-app');
 
     chrome.runtime.sendMessage('load', function(response){
@@ -41,4 +41,4 @@ window.addEventListener('load', function(){
 
         return true;
     })
-})
+// })
